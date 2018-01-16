@@ -1,4 +1,6 @@
-This is a simple example demonstrating how to implement the following in Kinvey:
+# Login Sample Application built with Kinvey
+
+This is a simple example demonstrating how to implement the following in [Kinvey](https://www.kinvey.com/):
 
 * Creating an implicit (anonymous) active user
 * Signing up and logging in with Kinvey authentication

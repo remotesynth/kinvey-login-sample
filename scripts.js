@@ -64,7 +64,7 @@ document.getElementById('nosignin').addEventListener('click', function () {
     }).catch(function(error) {
         console.log(error);
     });
-}, true);
+});
 
 // just in case, remove the other role first then pass the hero role id to assign the role
 document.getElementById('hero-button').addEventListener('click', function() {

@@ -27,8 +27,7 @@ function onRequest(request, response, modules) {
           "Authorization":authString
         }
       },
-      auth,
-      logger = modules.logger;
+      auth;
   
 	auth = modules.request.put(requestOptions,function(error, res, body){
 		if (error){
@@ -59,8 +58,7 @@ function onRequest(request, response, modules) {
           "Authorization":authString
         }
       },
-      auth,
-      logger = modules.logger;
+      auth;
   
 	auth = modules.request.del(requestOptions,function(error, res, body){
 		if (error){

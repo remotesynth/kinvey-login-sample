@@ -11,7 +11,7 @@ var promise = Kinvey.User.logout();
 
 // sign up a new user with Kinvey authentication
 document.getElementById('signup-button').addEventListener('click', function(event) {
-    // TODO: perform form validation
+    // If you want to validate these inputs before sending them to the backend you should do that here
     var user = new Kinvey.User();
     var promise = user.signup({
         username: document.getElementById('email').value,

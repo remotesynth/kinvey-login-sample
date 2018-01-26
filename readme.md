@@ -19,7 +19,7 @@ function onRequest(request, response, modules) {
       masterSecret = context.getMasterSecret(),
       userid = request.body.userid,
       roleid = request.body.roleid,
-      uri = 'https://baas.kinvey.com/user/kid_rk7NMn57z/' + userid + '/roles/' + roleid,
+      uri = 'https://baas.kinvey.com/user/' + context.getAppKey()+ '/' + userid + '/roles/' + roleid,
       authString = "Basic " + utils.base64.encode(appKey + ":" + masterSecret),
       requestOptions = {
         uri:uri, 
@@ -50,7 +50,7 @@ function onRequest(request, response, modules) {
       masterSecret = context.getMasterSecret(),
       userid = request.body.userid,
       roleid = request.body.roleid,
-      uri = 'https://baas.kinvey.com/user/kid_rk7NMn57z/' + userid + '/roles/' + roleid,
+      uri = 'https://baas.kinvey.com/user/' + context.getAppKey()+ '/' + userid + '/roles/' + roleid,
       authString = "Basic " + utils.base64.encode(appKey + ":" + masterSecret),
       requestOptions = {
         uri:uri, 
